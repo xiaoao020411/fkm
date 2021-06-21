@@ -142,7 +142,7 @@ export default {
       return fmt
     }
     return {
-      headers: { token: localStorage.getItem('token') },
+      headers: { token: sessionStorage.getItem('token') },
       from: {
         id: 0,
         title: '',

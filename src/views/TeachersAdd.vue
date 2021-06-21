@@ -94,7 +94,7 @@ export default {
       }
     }
     return {
-      headers: { token: localStorage.getItem('token') },
+      headers: { token: sessionStorage.getItem('token') },
       from: {
         name: '',
         tel: '',

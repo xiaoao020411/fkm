@@ -5,7 +5,7 @@ function req(method, url, params, data) {
       method: method,
       url: url,
       params: params,
-      headers: { token: localStorage.getItem('token') },
+      headers: { token: sessionStorage.getItem('token') },
       data: data,
     })
       .then(function(response) {

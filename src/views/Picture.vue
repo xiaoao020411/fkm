@@ -80,7 +80,7 @@
 export default {
   data() {
     return {
-      headers: { token: localStorage.getItem('token') },
+      headers: { token: sessionStorage.getItem('token') },
       channel: '',
       tableData: [],
       loading: true,

@@ -67,18 +67,18 @@
 export default {
   data() {
     return {
-      headers: { token: localStorage.getItem('token') },
+      headers: { token: sessionStorage.getItem('token') },
       isCollapse: false,
       menuList: [],
     }
   },
   created() {
-    this.menuList = JSON.parse(localStorage.getItem('menu'))
-    // console.log(localStorage.getItem())
+    this.menuList = JSON.parse(sessionStorage.getItem('menu'))
+    console.log(sessionStorage.getItem())
   },
   methods: {
     loginOut() {
-      localStorage.removeItem('token')
+      sessionStorage.removeItem('token')
       this.$router.push('/login')
     },
     clickisshow() {

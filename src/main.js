@@ -25,7 +25,7 @@ export default {}
 router.beforeEach((to, from, next) => {
   console.log('to', to)
   console.log('from', from)
-  if (to.name != 'Login' && localStorage.getItem('token') == null) {
+  if (to.name != 'Login' && sessionStorage.getItem('token') == null) {
     next('/login')
   } else {
     next()

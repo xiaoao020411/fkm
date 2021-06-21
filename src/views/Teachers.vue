@@ -78,7 +78,7 @@ export default {
         name: '',
       },
       dialogVisible: false,
-      headers: { token: localStorage.getItem('token') },
+      headers: { token: sessionStorage.getItem('token') },
     }
   },
   created() {

@@ -60,7 +60,7 @@
 export default {
   data() {
     return {
-      headers: { token: localStorage.getItem('token') },
+      headers: { token: sessionStorage.getItem('token') },
       from: {
         title: '',
         picture: '',

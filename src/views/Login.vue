@@ -37,9 +37,9 @@ export default {
       that.$http.post('/api/admin/checklogin', that.model).then(
         (res) => {
           console.log(res)
-          localStorage.setItem('menu', JSON.stringify(res.data.menu))
-          localStorage.setItem('token', res.data.token)
-          console.log(localStorage.getItem('token'))
+          sessionStorage.setItem('menu', JSON.stringify(res.data.menu))
+          sessionStorage.setItem('token', res.data.token)
+          console.log(sessionStorage.getItem('token'))
           that.$router.push({
             path: '/',
           })

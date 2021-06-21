@@ -199,7 +199,7 @@
 export default {
   data() {
     return {
-      headers: { token: localStorage.getItem('token') },
+      headers: { token: sessionStorage.getItem('token') },
       id: '',
       form: {
         id: 0,
